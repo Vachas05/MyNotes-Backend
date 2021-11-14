@@ -44,6 +44,7 @@ router.post('/createUser',[
 })
 } catch (error) {
   console.error(error.message);
+  res.status(500).send("Internal Server Error.");
 }
 
 //ROUTE 2 : endpoint for login : /api/auth/login
